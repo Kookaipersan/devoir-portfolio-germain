@@ -1,42 +1,88 @@
-
 @media all and (max-width: 600px) {
-    header img { width: 100%; }
+  header img {
+    width: 80%;
   }
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
 
 
 
- /* Style de l'image-container */
+/* Style de l'image-container */
 .image-container {
-  position: relative;          /* Nécessaire pour positionner le texte au-dessus de l'image */
+  position: relative;
+  /* Nécessaire pour positionner le texte au-dessus de l'image */
 }
 
 .image-container img {
-  width: 100%;                 /* L'image prend toute la largeur */
-  height: auto;                /* Assure que l'image garde ses proportions */
-  min-height: 30vh;            /* Minimum hauteur de 50% de la fenêtre */
-  object-fit: cover;           /* L'image s'ajuste sans déformation */
+  width: 100%;
+  /* L'image prend toute la largeur */
+  height: 100%;
+  /* Assure que l'image garde ses proportions */
+  min-height: 50vh;
+  /* Minimum hauteur de 50% de la fenêtre */
+  object-fit: cover;
+  /* L'image s'ajuste sans déformation */
 }
 
 /* Style du texte */
 .text-one {
-  position: absolute;          /* Permet de positionner le texte sur l'image */
-  top: 50%;                     /* Centre verticalement */
-  left: 50%;                    /* Centre horizontalement */
-  transform: translate(-50%, -50%); /* Ajuste le centrage en prenant en compte la taille du texte */
-  text-align: center;           /* Centre le texte à l'intérieur de .text-one */
-  color: white;                 /* Couleur du texte */
-  z-index: 10;                  /* S'assure que le texte est au-dessus de l'image */
-  padding: 10px;                /* Ajout d'un petit padding autour du texte pour plus d'espace */
+  position: absolute;
+  /* Permet de positionner le texte sur l'image */
+  top: 50%;
+  /* Centre verticalement */
+  left: 50%;
+  /* Centre horizontalement */
+  transform: translate(-50%, -50%);
+  /* Ajuste le centrage en prenant en compte la taille du texte */
+  text-align: center;
+  /* Centre le texte à l'intérieur de .text-one */
+  color: white;
+  /* Couleur du texte */
+  z-index: 10;
+  /* S'assure que le texte est au-dessus de l'image */
+  padding: 10px;
+  /* Ajout d'un petit padding autour du texte pour plus d'espace */
 }
 
 h1 {
-  font-size: 3rem;  /* Ajustez la taille de la police pour le h1 */
+  font-size: 3rem;
+  /* Ajustez la taille de la police pour le h1 */
   margin: 0;
 }
 
 h2 {
-  font-size: 2rem;  /* Ajustez la taille de la police pour le h2 */
+  font-size: 2rem;
+  /* Ajustez la taille de la police pour le h2 */
   margin: 0;
 }
 
+h3 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
 /* Responsivité pour les petits écrans */
+.text {
+  font-size: 12px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+.nav-item {
+  font-size: 10px;
+}
+
+.liens a {
+  text-decoration: none;
+  /* Supprime le soulignement */
+  color: white;
+  /* Applique la couleur blanche */
+}
