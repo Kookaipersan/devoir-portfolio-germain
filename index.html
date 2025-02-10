@@ -11,7 +11,10 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../devoir-portfolio-germain/default/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./default/style.css">
+
     <title>Page 1</title>
 </head>
 
@@ -22,27 +25,27 @@
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">William</a>
+                <a class="navbar-brand" href="#"><small>William</small></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>   
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html"><ins>HOME</ins></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link underline-hover" href="./offre.html">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PORTFOLIO</a>
+                            <a class="nav-link underline-hover" href="./portfolio.html">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link underline-hover" href="./contact.html">CONTACT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MENTIONS LEGALES</a>
+                            <a class="nav-link underline-hover" href="#">MENTIONS LEGALES</a>
                         </li>
                     </ul>
                 </div>
@@ -51,21 +54,69 @@
 
     </header>
     <main>
-        <div class="image-container">
-            <img src="../devoir-portfolio-germain/default/images/hero-bg.jpg" class="w-100 min-vh-50" alt="hero-bg">
-            <div class="text-one">
+
+        <div class="image-container position-relative">
+            <img class="img-fluid" src="./default/images/hero-bg.jpg" class="w-100 min-vh-50" alt="hero-bg">
+            <div class="text-one position-absolute top-50 start-50 translate-middle text-center text-white">
                 <h1>Bonjour, je suis William Germain</h1>
                 <h2>Développeur web full stack</h2>
+                <!-- Bouton qui déclenche la modal -->
+                <button type="button" class="btn btn-danger mt-3 p-1" data-bs-toggle="modal" data-bs-target="#plus">
+                    En savoir plus
+                </button>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="plus" tabindex="-1" aria-labelledby="titre" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark ">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="titre">Mon profil GitHub</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                    </div>
+                    <div class="modal-body d-flex text-white">
+                        <img src="./default/images/vidnoz_cartoon_1738241058716.jpg" alt="Image GitHub"
+                            style="max-width: 250px; margin-right: 25px;">
+                        <ul class="list-unstyled opacity-70 ">
+                            <li class="custom-small-font">
+                                <i class="bi bi-geo-alt"><a href="#">William Germain</a></i>
+                                <hr>
+                            </li>
+                            <li class="custom-small-font">
+                            <i class="bi bi-person-vcard">identité de william</i>
+                            </li>
+                            <hr>
+                            <li class="custom-small-font">
+                            <i class="bi bi-box-seam">Repositories:4</i>
+                            </li>
+                            <hr>
+                            <li class="custom-small-font">
+                                <i class="bi bi-person-add">Followers:16</i>
+                            </li>
+                            <hr>
+                            <li class="custom-small-font">
+                                <i class="bi bi-people-fill">following:0</i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
-    <div class="container-md border border-1 mt-4 shadow p-2">
+
+    <div class="container-md border border-1 mt-5 shadow p-2">
         <div class="row">
-            <div class="col-lg-6 col-md-12 mt-2">
+            <div class="col-lg-6 col-md-12 mt-4">
                 <h3 span class="border-bottom border-3 border-primary p-2 "></span>A propos</h3>
 
-                <img src="../devoir-portfolio-germain/default/images/john-doe-about.jpg" class="mt-4 mb-2 img-fluid"
-                    alt="A propos">
+                <img src="./default/images/john-doe-about.jpg" class="mt-4 mb-2 img-fluid" alt="A propos">
                 <p class="text">
                     Compétences clés en gestion d'équipes, optimisation des performances commerciales, gestion des
                     stocks et des
@@ -75,9 +126,10 @@
                     également la gestion financière, la mise en place de stratégies marketing et la maîtrise des outils
                     de gestion.
                 </p>
+
             </div>
 
-            <div class="col-lg-6 col-md-12 mt-2">
+            <div class="col-lg-6 col-md-12 mt-4">
                 <h3 span class="border-bottom border-3 border-primary p-2 "></span>Mes compétences</h3>
 
                 <div class="mb-3">
@@ -95,7 +147,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="progress1" class="form-label">JAVASCRIPT </label>
+                    <label for="progress1" class="form-label">JAVASCRIPT 70%</label>
                     <div class="progress">
                         <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
                             aria-valuemin="0" aria-valuemax="100">70%</div>
@@ -119,76 +171,56 @@
         </div>
     </div>
     <footer>
-        <div class="container-md mt-2 p-2 mb-1 bg-dark text-white">
+        <div class="container-fluid mt-2 p-2 mb-1 bg-dark text-white">
             <div class="row">
-
-                <div class="col">
+                <div class="col-lg-4 col-sm-12 mt-3">
                     <h5>William Germain</h5>
-                    <address class="m-0"> 44 rue Camille St Saêns <br>
+                    <address class="m-0">
+                        44 rue Camille St Saêns <br>
                         63800 Cournon <br>
                         03.24.90.00.00 <br>
                         Kookaipersan@gmail.com
                     </address>
-
-                    <div class="social-icons text-start">
-                    
-                        <a href="../devoir-portfolio-germain/default/images/github.png" target="_blank" class="text-white">
-                          <i class="fab fa-github"></i>
-                        </a>
-                        <a href="../devoir-portfolio-germain/default/images/twitter.png" target="_blank" class="text-white">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="../devoir-portfolio-germain/default/images/linkedin.png" target="_blank" class="text-dark">
-                          <i class="fab fa-linkedin"></i>
-                        </a>
+                    <div>
+                        <a href="#" class="text-decoration-none text-white"><i class="bi bi-github fs-5 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-white"><i class="bi bi-twitter fs-5 me-2"></i></a>
+                        <a href="#" class="text-decoration-none text-white"><i class="bi bi-linkedin fs-5"></i></a>
                     </div>
                 </div>
-                <div class="col">
+
+                <div class="col-lg-4 col-sm-12 mt-3">
                     <h5>Liens utiles</h5>
                     <ul class="liens list-unstyled">
-                        <li>
-                            <a href="../devoir-portfolio-germain/index.html">Accueil</a>
+                        <li><a href="./index.html" class="text-decoration-none text-white hover-bold">Accueil</a></li>
+                        <li><a href="./offre.html" class="text-decoration-none text-white hover-bold ">Services</a></li>
+                        <li><a href="./portfolio.html" class="text-decoration-none text-white hover-bold ">Portfolio</a>
                         </li>
-                        <li>
-                            <a href="../devoir-portfolio-germain/offre.html">Services</a>
+                        <li><a href="./contact.html" class="text-decoration-none text-white hover-bold">Me contacter</a>
                         </li>
-                        <li>
-                            <a href="../devoir-portfolio-germain/portfolio.html">Portfolio</a>
-                        </li>
-                        <li><a href="../devoir-portfolio-germain/contact.html">Me contacter</a>
-                        </li>
-                        <li><a href="#">Mentions légales</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>Mes dernières réalisations</h5>
-                    <ul class="liens list-unstyled">
-                        <li>
-                            <a href="#">Accueil</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li><a href="#">Me contacter</a>
-                        </li>
-                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#" class="text-decoration-none text-white hover-bold">Mentions légales</a></li>
                     </ul>
                 </div>
 
+                <div class="col-lg-4 col-sm-12 mt-3">
+                    <h5>Mes dernières réalisations</h5>
+                    <ul class="liens list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-white hover-bold ">Accueil</a></li>
+                        <li><a href="#" class="text-decoration-none text-white hover-bold">Services</a></li>
+                        <li><a href="#" class="text-decoration-none text-white hover-bold">Portfolio</a></li>
+                        <li><a href="#" class="text-decoration-none text-white hover-bold">Me contacter</a></li>
+                        <li><a href="#" class="text-decoration-none text-white hover-bold">Mentions légales</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
