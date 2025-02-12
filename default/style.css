@@ -1,34 +1,36 @@
-@media all and (max-width: 600px) {
-  header img { width: 100%; }
-}
+
+
+
 @media (max-width: 576px) {
   hr {
-      width: 25%;
+    width: 25%;
   }
 }
+
 * {
   font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
-/* Style de l'image-container */
+/* Pour inserer du texte dans l'image */
 .image-container {
   position: relative;
-  /* Nécessaire pour positionner le texte au-dessus de l'image */
 }
 
 
-
+/* Ajustement des tailles de polices pour les titres et textes */
 h1 {
   font-size: 6vw;
-  /* Ajustez la taille de la police pour le h1 */
   margin: 0;
 }
 
 h2 {
   font-size: 2rem;
-  /* Ajustez la taille de la police pour le h2 */
   margin: 0;
 }
 
@@ -40,7 +42,6 @@ h5 {
   font-size: 18px;
 }
 
-/* Responsivité pour les petits écrans */
 .text {
   font-size: 15px;
 }
@@ -53,19 +54,54 @@ footer {
   font-size: 14px;
 }
 
+/* Soulignement lors du survol dans le header */
 .underline-hover:hover {
   text-decoration: underline;
 }
 
+/* au survol font plus foncé dans le footer */
 .hover-bold:hover {
   font-weight: bold;
 }
-.modal{
-z-index:1060;
+
+.modal {
+  z-index: 1060;
 }
-section .p{
+
+section .p {
   font-size: 10px;
 }
+
+/* page portfolio */
 .custom-small-font {
   font-size: 0.8rem;
+}
+
+/* Polices du texte des cards */
+.card-text {
+  font-size: 11px;
+}
+
+/* Police des pieds de page des cards */
+.card-footer {
+  font-size: 11px;
+}
+
+/* page contact */
+section p.text-center {
+  font-size: 12px;
+}
+
+/* Changement de la couleur de la card au survol */
+.hover-card:hover {
+  background-color: #efefef;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Changement de la couleur du bouton au survol */
+.btn-primary:hover {
+  background-color: #66b3ff;
+  border-color: #66b3ff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
