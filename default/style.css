@@ -62,19 +62,25 @@ footer {
 .social-icons i{
   color: #555;
 }
-/* au survol des icons  */
+/* au survol des icons dans le footer  */
 .social-icons i:hover{
   color: #fff;
 }
-/* au survol des icons dans le footer  */
+
 
 /* au survol font plus foncé dans le footer */
 .hover-bold:hover {
   font-weight: bold;
 }
-
+/* modal */
 .modal {
   z-index: 1060;
+}
+.content::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #3c3c3c; /* Ligne de séparation */
+  margin-top: 10px; /* Espace au-dessus de la ligne */
 }
 
 section .p {
