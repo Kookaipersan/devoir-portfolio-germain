@@ -6,7 +6,7 @@
     width: 25%;
   }
 }
-
+/* GENERALE */
 * {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -58,6 +58,15 @@ footer {
 .underline-hover:hover {
   text-decoration: underline;
 }
+/* couleur des icons footer */
+.social-icons i{
+  color: #555;
+}
+/* au survol des icons  */
+.social-icons i:hover{
+  color: #fff;
+}
+/* au survol des icons dans le footer  */
 
 /* au survol font plus foncé dans le footer */
 .hover-bold:hover {
